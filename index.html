@@ -20,39 +20,39 @@
             <span class="big-font">{{rolls[0]}}</span>
           </div>
           <div class="current-element">
-              Modifier<br/>
-              <span class="big-font">{{lastModifier}}</span>
+              Pool<br/>
+              <span class="medium-font">{{lastRoll}}</span>
           </div>  
           <div class="current-element">
               Roll Number<br/>
               <span class="big-font">{{count}}</span>
           </div>
         </div>  
-        <h1>Bonus Dice</h1>
+        <h1>Tier 1-2 (TN 8)</h1>
         <div class="button-row">
-          <button class="roll-button" onClick="displayResult(0)">+0</button>
-          <button class="roll-button" onClick="displayResult(1)">+1</button>
-          <button class="roll-button" onClick="displayResult(2)">+2</button>
-          <button class="roll-button" onClick="displayResult(3)">+3</button>
-          <button class="roll-button" onClick="displayResult(4)">+4</button>
-          <button class="roll-button" onClick="displayResult(5)">+5</button>
-          <button class="roll-button" onClick="displayResult(6)">+6</button>
-          <button class="roll-button" onClick="displayResult(7)">+7</button>
-          <button class="roll-button" onClick="displayResult(8)">+8</button>
-          <button class="roll-button" onClick="displayResult(9)">+9</button>
+          <button class="roll-button" onClick="displayResult(1, 8)">1</button>
+          <button class="roll-button" onClick="displayResult(2, 8)">2</button>
+          <button class="roll-button" onClick="displayResult(3, 8)">3</button>
+          <button class="roll-button" onClick="displayResult(4, 8)">4</button>
+          <button class="roll-button" onClick="displayResult(5, 8)">5</button>
+          <button class="roll-button" onClick="displayResult(6, 8)">6</button>
+          <button class="roll-button" onClick="displayResult(7, 8)">7</button>
+          <button class="roll-button" onClick="displayResult(8, 8)">8</button>
+          <button class="roll-button" onClick="displayResult(9, 8)">9</button>
+          <button class="roll-button" onClick="displayResult(10, 8)">10</button>
         </div>
-        <h1>Penalty Dice</h1>
+        <h1>Tier 3-4 (TN 7)</h1>
         <div class="button-row">
-            <button class="roll-button" onClick="displayResult(-0)">-0</button>
-            <button class="roll-button" onClick="displayResult(-1)">-1</button>
-            <button class="roll-button" onClick="displayResult(-2)">-2</button>
-            <button class="roll-button" onClick="displayResult(-3)">-3</button>
-            <button class="roll-button" onClick="displayResult(-4)">-4</button>
-            <button class="roll-button" onClick="displayResult(-5)">-5</button>
-            <button class="roll-button" onClick="displayResult(-6)">-6</button>
-            <button class="roll-button" onClick="displayResult(-7)">-7</button>
-            <button class="roll-button" onClick="displayResult(-8)">-8</button>
-            <button class="roll-button" onClick="displayResult(-9)">-9</button>
+          <button class="roll-button" onClick="displayResult(1, 7)">1</button>
+          <button class="roll-button" onClick="displayResult(2, 7)">2</button>
+          <button class="roll-button" onClick="displayResult(3, 7)">3</button>
+          <button class="roll-button" onClick="displayResult(4, 7)">4</button>
+          <button class="roll-button" onClick="displayResult(5, 7)">5</button>
+          <button class="roll-button" onClick="displayResult(6, 7)">6</button>
+          <button class="roll-button" onClick="displayResult(7, 7)">7</button>
+          <button class="roll-button" onClick="displayResult(8, 7)">8</button>
+          <button class="roll-button" onClick="displayResult(9, 7)">9</button>
+          <button class="roll-button" onClick="displayResult(10, 7)">10</button>
         </div>
         <h1>Roll History (left is most recent)</h1>  
         <div id="results">
