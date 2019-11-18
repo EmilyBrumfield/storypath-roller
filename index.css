@@ -1,0 +1,42 @@
+.current {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+}
+
+.current-element {
+    height: 150px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.big-font {
+    font-size: 75px;
+    line-height: 100px;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(10, 75px);
+}
+
+.result {
+    border: 1px solid black;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 24px;
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: repeat(10, 75px);
+}
+
+.roll-button {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    font-size: 24px;
+}
+
