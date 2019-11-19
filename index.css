@@ -44,6 +44,58 @@
     line-height: 30px;
 }
 
+@media only screen and (min-width: 480px) {
+
+    .current {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+    }
+    
+    .current-element {
+        height: 90px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .big-font {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    
+    .medium-font {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    
+    #results {
+        display: grid;
+        grid-template-columns: repeat(10, 45px);
+    }
+    
+    .result {
+        border: 1px solid black;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        font-size: 24px;
+    }
+    
+    .button-row {
+        display: grid;
+        grid-template-columns: repeat(10, 45px);
+    }
+    
+    .roll-button {
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+        font-size: 24px;
+    }
+    
+}
+
+
 
 
 @media only screen and (min-width: 768px) {
