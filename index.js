@@ -1,8 +1,3 @@
-//display two rows, one positive, one negative, both with zero
-//media query version has different lengths of rows with buttons, possibly?
-//accessibility
-//PWA
-
 const MAX_HISTORY = 10;
 const BASE_DICE = 5;
 
