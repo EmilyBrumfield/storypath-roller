@@ -1,150 +1,125 @@
+:root {
+    --size-small: 20px;
+    --size-medium: 30px;
+    --size-large: 40px;
+    --size-huge: 60px;
+    --size-gargantuan: 100px;
+    --monochrome-main-background: white;
+    --monochrome-button-background: lightgray;
+    --colorized-main-background: #EEFFFF;
+    --colorized-button-background: #AAAAFF;
+}
+
+
+html {
+    background-color: var(--monochrome-main-background);
+}
+
+button {
+    background-color: var(--monochrome-button-background);
+    border-radius: 25%;
+}
+
+button {
+    border-radius: 25%;
+}
 
 .current {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, var(--size-gargantuan));
 }
 
 .current-element {
-    height: 60px;
-    line-height: 20px;
+    height: var(--size-huge);
+    line-height: var(--size-small);
     text-align: center;
     border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
 }
 
 .big-font {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: var(--size-medium);
+    line-height: var(--size-large);
 }
 
 .medium-font {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: var(--size-small);
+    line-height: var(--size-large);
 }
 
 #results {
     display: grid;
-    grid-template-columns: repeat(10, 30px);
+    grid-template-columns: repeat(10, var(--size-medium));
 }
 
 .result {
     border: 1px solid black;
-    height: 30px;
+    height: var(--size-medium);
     text-align: center;
-    line-height: 30px;
+    line-height: var(--size-medium);
+    background-color: white;
+    color: black;
 }
 
 .button-row {
     display: grid;
-    grid-template-columns: repeat(10, 30px);
+    grid-template-columns: repeat(10, var(--size-medium));
 }
 
 .roll-button {
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
+    height: var(--size-medium);
+    width: var(--size-medium);
+    line-height: var(--size-medium);
 }
 
 @media only screen and (min-width: 480px) {
 
-    .current {
-        display: grid;
-        grid-template-columns: repeat(3, 150px);
+    :root {
+        --size-small: 30px;
+        --size-medium: 45px;
+        --size-large: 60px;
+        --size-huge: 90px;
+        --size-gargantuan: 150px;
     }
     
     .current-element {
-        height: 90px;
-        line-height: 30px;
-        text-align: center;
-        border: 1px solid black;
+        border-radius: 15px;
     }
-    
-    .big-font {
-        font-size: 45px;
-        line-height: 60px;
-    }
-    
-    .medium-font {
-        font-size: 30px;
-        line-height: 60px;
-    }
-    
-    #results {
-        display: grid;
-        grid-template-columns: repeat(10, 45px);
-    }
-    
+
     .result {
-        border: 1px solid black;
-        height: 45px;
-        text-align: center;
-        line-height: 45px;
         font-size: 24px;
     }
     
-    .button-row {
-        display: grid;
-        grid-template-columns: repeat(10, 45px);
-    }
-    
     .roll-button {
-        height: 45px;
-        width: 45px;
-        line-height: 45px;
         font-size: 24px;
     }
     
 }
-
-
 
 
 @media only screen and (min-width: 768px) {
 
-    .current {
-        display: grid;
-        grid-template-columns: repeat(3, 250px);
+    :root {
+        --size-small: 50px;
+        --size-medium: 75px;
+        --size-large: 100px;
+        --size-huge: 150px;
+        --size-gargantuan: 250px;
     }
-    
+
     .current-element {
-        height: 150px;
-        line-height: 50px;
-        text-align: center;
-        border: 1px solid black;
-    }
-    
-    .big-font {
-        font-size: 75px;
-        line-height: 100px;
-    }
-    
-    .medium-font {
-        font-size: 50px;
-        line-height: 100px;
-    }
-    
-    #results {
-        display: grid;
-        grid-template-columns: repeat(10, 75px);
+        border-radius: 25px;
     }
     
     .result {
-        border: 1px solid black;
-        height: 75px;
-        text-align: center;
-        line-height: 75px;
         font-size: 24px;
     }
     
-    .button-row {
-        display: grid;
-        grid-template-columns: repeat(10, 75px);
-    }
-    
     .roll-button {
-        height: 75px;
-        width: 75px;
-        line-height: 75px;
         font-size: 24px;
     }
     
 }
+
