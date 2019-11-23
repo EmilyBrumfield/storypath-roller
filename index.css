@@ -4,6 +4,7 @@
     --size-large: 40px;
     --size-huge: 60px;
     --size-gargantuan: 100px;
+    --size-border-radius: 10px;
     --monochrome-main-background: white;
     --monochrome-button-background: lightgray;
     --colorized-main-background: #EEFFFF;
@@ -34,7 +35,7 @@ button {
     line-height: var(--size-small);
     text-align: center;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: var(--size-border-radius);
     background-color: white;
     color: black;
 }
@@ -61,6 +62,7 @@ button {
     line-height: var(--size-medium);
     background-color: white;
     color: black;
+    font-size: var(--size-font);
 }
 
 .button-row {
@@ -72,6 +74,7 @@ button {
     height: var(--size-medium);
     width: var(--size-medium);
     line-height: var(--size-medium);
+    font-size: var(--size-font);
 }
 
 @media only screen and (min-width: 480px) {
@@ -82,20 +85,9 @@ button {
         --size-large: 60px;
         --size-huge: 90px;
         --size-gargantuan: 150px;
+        --size-border-radius: 15px;
+        --size-font: 24px;
     }
-    
-    .current-element {
-        border-radius: 15px;
-    }
-
-    .result {
-        font-size: 24px;
-    }
-    
-    .roll-button {
-        font-size: 24px;
-    }
-    
 }
 
 
@@ -107,19 +99,8 @@ button {
         --size-large: 100px;
         --size-huge: 150px;
         --size-gargantuan: 250px;
+        --size-border-radius: 25px;
+        --size-font: 24px;
     }
-
-    .current-element {
-        border-radius: 25px;
-    }
-    
-    .result {
-        font-size: 24px;
-    }
-    
-    .roll-button {
-        font-size: 24px;
-    }
-    
 }
 
